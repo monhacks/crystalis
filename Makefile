@@ -43,7 +43,7 @@ crystal11_obj := $(crystal_obj:.o=11.o)
 .PRECIOUS:
 .SECONDARY:
 
-all: crystal
+all: tools crystal crystal11
 crystal: pokecrystal.gbc
 crystal11: pokecrystal11.gbc
 
