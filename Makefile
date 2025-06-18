@@ -4,10 +4,16 @@ else
 SHA1 := sha1sum
 endif
 
-RGBASM := rgbasm
-RGBFIX := rgbfix
-RGBGFX := rgbgfx
-RGBLINK := rgblink
+ifneq ($(wildcard rgbds/.*),)
+RGBDS := rgbds/
+else
+RGBDS :=
+endif
+
+RGBASM := $(RGBDS)rgbasm
+RGBFIX := $(RGBDS)rgbfix
+RGBGFX := $(RGBDS)rgbgfx
+RGBLINK := $(RGBDS)rgblink
 
 roms := pokecrystal.gbc pokecrystal11.gbc
 
