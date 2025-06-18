@@ -1911,7 +1911,7 @@ CheckUserHasEnoughHP: ; 3ccde
 	ret
 ; 3ccef
 
-RestoreHP ; 3ccef
+RestoreHP: ; 3ccef
 	ld hl, wEnemyMonMaxHP
 	ld a, [hBattleTurn]
 	and a

@@ -16,3 +16,4 @@ ItemPocketNames:
 .Berry:    db "BERRY POCKET@"
 .Battle:   db "BATTLE POCKET@"
 .Medicine: db "POTION POCKET@"
+.Mail:	   db "MAIL POCKET@"
